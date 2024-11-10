@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100px; /* Ajusta el tamaño del logo */
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: #340fda;
+            border-radius: 5px;
+        }
+        .contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 10px;
+        }
+        .destino, .paquete {
+            background-color: white;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .destino img, .paquete img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .destino h3, .paquete h3 {
+            color: #333;
+            margin: 15px 0;
+        }
+        .precio {
+            font-weight: bold;
+            color: #ff9900;
+            font-size: 1.3rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+        footer h3 {
+            margin: 10px 0;
+        }
+        footer .contacto, footer .servicios {
+            margin: 20px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/LOGO.avif" alt="Logo de la Agencia de Viajes">
+        <h1>AGENCIA TRAVEL S.A.C</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#paquetes">Paquetes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+
+        <section id="destinos" class="destino">
+            <h3>Destinos Nacionales</h3>
+            <img src="img/Ciudadela-de-Machu-Picchu-1.webp" alt="Destino 1">
+            <p>Machu Picchu, la "Ciudad Perdida de los Incas", es uno de los destinos más emblemáticos del mundo y una de las siete maravillas modernas. Ubicada en lo alto de los Andes peruanos, esta antigua ciudad inca ofrece vistas impresionantes y una historia fascinante.</p>
+            <p class="precio">Desde S/ 125</p>
+        </section>
+
+        <section id="destinos" class="destino">
+            <h3>Destinos Internacional</h3>
+            <img src="img/madrid.jpg" alt="Destino 2">
+            <p>Madrid, la vibrante capital de España, es una ciudad que combina historia, arte y modernidad. Famosa por su impresionante patrimonio cultural, cuenta con lugares icónicos como el Museo del Prado, el Palacio Real y la Plaza Mayor</p>
+            <p class="precio">Desde S/ 1195</p>
+        </section>
+
+        <section id="paquetes" class="paquete">
+            <h3>PAQUETES</h3>
+            <img src="img/iquitos1.jpg" alt="Paquete 1">
+            <p>Disfruta de paquetes exclusivos con todo incluido a la cuidad de iquitos, el paquete consta de 7 días y 6 noches con todo todo incluidos.</p>
+            <p class="precio">Desde S/ 872</p>
+        </section>
+    </div>
+
+    <footer>
+        <section id="contacto" class="contacto">
+            <h3>Contacto</h3>
+            <p>Email: <a href="mailto:tralvel@tralvel.com">tralvel@tralvel.com</a></p>
+            <p>Teléfono: (+51) 999 999 999</p>
+        </section>
+        
+        <section id="servicios" class="servicios">
+            <h3>Servicios</h3>
+            <p><a href="#">Asesoría de viajes</a></p>
+            <p><a href="#">Reservas de vuelos</a></p>
+            <p><a href="#">Paquetes turísticos personalizados</a></p>
+        </section>
+    </footer>
+
+</body>
+</html>
